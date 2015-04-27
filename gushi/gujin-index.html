@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>古今茶语</title>
+    <link rel="stylesheet" href="../css/myapp.css"/>
+
+    <script src="../js/touchs.js"></script>
+</head>
+<body class="bg-lgrey">
+<div id="container" style="display: block;">
+    <div class="container-fluid">
+        <!--顶部logo-->
+        <div class="c-box">
+            <img src="images/kzgs_logo.png" alt=""/>
+        </div>
+    </div>
+    <!--内容列表-->
+    <div class="container-fluid cont-pack mgt-15 mgb15">
+        <div class="w80 cont-pack">
+            <ul class="kz-list c-box" id="ulBox">
+                <!--JS动态生成li-->
+            </ul><!--列表结束-->
+        </div>
+    </div>
+</div>
+<!--大图显示-->
+<div class="canvas" style="display: none;" id="canvas">
+    <ul></ul>
+    <div class="tishi text-c co-orange container-fluid f14" id="returnDom">点我击返回列表</div>
+</div>
+<script src="javascript/gushi.js"></script>
+<script>
+
+
+new imgList({
+    name:"古今茶语",
+    dom:document.getElementById("ulBox"),
+    ListDom:document.getElementById("container"),
+    largeDom:document.getElementById("canvas"),
+    url:"images/gujin/",
+    totle:14,
+    rtDon:document.getElementById("returnDom")
+});
+
+
+
+
+</script>
+</body>
+</html>

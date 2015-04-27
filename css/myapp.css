@@ -1,0 +1,501 @@
+/*公共reset*/
+*,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+input {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", "微软雅黑";
+    outline: none
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+body {
+    font-size: 62.5%;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear-fix{
+    clear: both;
+}
+/*宽度*/
+
+.container-fluid{
+    width:100%;
+}
+.w50{
+    width: 50%;
+}
+.w80{
+    width: 80%;
+}
+.w90{
+    width: 90%;
+}
+.w30{
+    width: 30%;
+}
+.w-2{
+    width: 2px;
+}
+.mxw70{
+    max-width:70%;
+}
+.div-img img{
+    width: 100%;
+    height: 100%;
+}
+/*高度*/
+.h40{
+    height: 40%;
+}
+.h10{
+    height: 10%;
+}
+.h15{
+    height: 15%;
+}
+.h20{
+    height: 20%;
+}
+.h25{
+    height: 25%;
+}
+.h75{
+    height: 75%;
+}
+.h80{
+    height: 80%;
+}
+.h85{
+    height: 85%;
+}
+.h90{
+    height: 90%;
+}
+.h100{
+    height: 100%;
+}
+.h-20{
+    height: 2em;
+}
+.h-16{
+    height: 1.6em;
+}
+.h-100{
+    height: 10em;
+}
+.h-300{
+    height: 30em;
+}
+/*定位*/
+.po-ab{
+    position: absolute;
+}
+.po-re{
+    position: relative;
+}
+/*全屏展示*/
+.container-full{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+ }
+/*背景颜色*/
+.bg-pink{
+    background: #fc7c7a;
+}
+.bg-blue{
+    background: #74a5f1;
+}
+.bg-lgrey{
+    background: #efefef;
+}
+.bg-orange{
+    background: #ff9967;
+}
+.bg-lgreen{
+    background: #23c793;
+}
+.bg-white{
+    background: white;
+}
+.bg-grey{
+    background: rgba(36,36,36,0.5);
+}
+/*上下居中*/
+.cont-center{
+    display:-webkit-box;
+    display:box;
+    box-align:center;
+    -webkit-box-align:center;
+}
+/*左右居中*/
+.cont-pack{
+    display:-webkit-box;
+    display:box;
+    box-pack:center;
+    -webkit-box-pack:center;
+}
+/*文字居中*/
+.text-c{
+    text-align: center;
+}
+/*字体颜色*/
+.co-white{
+    color: white;
+}
+.co-pink{
+    color: #fc7c7a;
+}
+.co-blue{
+    color: #74a5f1;
+}
+.co-orange{
+    color: #ff9967;
+}
+.co-lgreen{
+    color: #23c793;
+}
+.co-black{
+    color:#8e8e8e;
+}
+/*字体大小*/
+.f14{
+    font-size: 1.4em;
+}
+.f15{
+    font-size: 1.5em;
+}
+.f16{
+    font-size: 1.6em;
+}
+.f18{
+    font-size: 1.8em;
+}
+.f20{
+    font-size: 2em;
+}
+.f30{
+    font-size: 3em;
+}
+.f50{
+    font-size: 5em;
+}
+/*行高*/
+.lineH15{
+    line-height: 15%;
+}
+/*文本超出省略号*/
+.text-overflow {
+    display:block;/*内联对象需加*/
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+
+/*padding*/
+.pdl-3{
+    padding-left: .3em;
+}
+.pdl25b{
+    padding-left: 25%;
+}
+.pdr-3{
+    padding-right: .3em;
+}
+.pd1{
+    padding: .1em;
+}
+.pd5{
+    padding: .5em;
+}
+.pd10{
+    padding: 1em;
+}
+/*margin*/
+.mgt-5{
+    margin-top: .5em;
+}
+.mg-10{
+    margin-top: 1em;
+}
+.mgt20{
+    margin-top: 20%;
+}
+.mgt-15{
+    margin-top: 1.5em;
+}
+.mgr10{
+    margin-right: 1em;
+}
+.mgr2{
+     margin-right: .2em;
+ }
+.mgl10{
+    margin-left: 1em;
+}
+.mgb5{
+    margin-bottom: .5em;
+}
+.mgb15{
+    margin-bottom: 1.5em;
+}
+.mgb-1{
+    margin-bottom: 1%;
+}
+/*圆圈*/
+.box-arc{
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.fill-arc{
+    border-radius:50% ;
+}
+.arc{
+    width: 1em;
+    height: 1em;
+}
+.radius5{
+    border-radius:.5em ;
+}
+/*图片自适应*/
+.c-box img{
+    width: 100%;
+}
+/*首页左侧*/
+.ind-left{
+    left: .2em;
+    bottom:0;
+    width: 25%;
+}
+.ind-arc1{
+    margin-top: -.2em;
+    left: 2%;
+    top:0;
+    height: 19%;
+    width: 96%;
+    border-radius: 50%;
+}
+.ind-arc1 img{
+    width: 100%;
+}
+.ind-arc2{
+    left: 10%;
+    top:27%;
+    width: 80%;
+    height: 14%;
+    border-radius: 50%;
+}
+.ind-arc3{
+    left: 10%;
+    top:46%;
+    width: 80%;
+    height: 14%;
+    border-radius: 50%;
+}
+.ind-arc4{
+    left: 10%;
+    top:65%;
+    width: 80%;
+    height: 14%;
+    border-radius: 50%;
+}
+.ind-arc5{
+    left: 10%;
+    top:84%;
+    width: 80%;
+    height: 14%;
+    border-radius: 50%;
+}
+
+/*购在宽窄*/
+.swper{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    overflow: hidden;
+}
+.swper ul{
+    width: 2000px;
+    height: 100%;
+    position: absolute;
+    list-style: none;
+    left:0;
+    top:0;
+}
+.swper ul li{
+    width:200px;
+    float: left;
+    margin-top:3em;
+    margin-left: 2em;
+    height: 85%;
+    overflow: hidden;
+    background: white;
+}
+.swper ul li a{
+    width: 98%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+.swper ul li a img{
+    height: 80%;
+    padding:2%;
+}
+
+/*吃在宽窄*/
+.eat-left{
+    position: fixed;
+    left: 0;
+    top:15%;
+}
+.eat-wei{
+    width: 1.8em;
+    padding:.5em .3em
+}
+.eat-yin{
+    width: 1.4em;
+    padding:.5em .3em
+}
+/*住在宽窄*/
+.hotel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.hotel-item a {
+    display: block;
+    height: 98%;
+}
+.hotel-item a img{
+    width: 70%;
+    height: 100%;
+}
+
+
+/*详情页*/
+.swper-detail{
+    width: 100%;
+    height: 24em;
+    display:inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.swper-detail ul{
+    list-style: none;
+    height:24em;
+    position:absolute;
+    display:inline-block;
+    left:0;
+    top:0;
+}
+.swper-detail ul li{
+    height: 24em;
+    display: block;
+    float: left;
+}
+.swper-detail ul li a{
+    display: block;
+}
+.swper-detail ul li a img{
+    width: 100%;
+    height: 24em;
+}
+.det-control{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+hr{
+    border:1px solid #ededed;
+    border-bottom:0;
+}
+.text-in{
+    text-indent:2em
+}
+/*酒店德门仁里图片页面*/
+.img-item img{
+       width:100%;
+}
+.img-item div{
+    left: 0;
+    bottom: .2em;
+}
+/*秒杀*/
+.box-sha{
+    box-shadow: 2px 2px 2px #bcbcbc;
+}
+
+/*宽窄故事*/
+.kz-list{
+    list-style: none;
+}
+.kz-list li{
+    width: 44%;
+    float: left;
+    margin-top: .5em;
+}
+.kz-list li:nth-child(2n){
+    margin-left: 1%;
+}
+.canvas{
+    overflow: hidden;
+}
+.canvas ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.canvas ul li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.tishi{
+    position: fixed;
+    left: 0;
+    bottom: .3em;
+}
